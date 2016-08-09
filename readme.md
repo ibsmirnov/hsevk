@@ -6,7 +6,7 @@ This data set contains information about 20,684 students of National Research Un
 Data collection
 ---------------
 
-Lists of students along with their GPA are publicly available on the university web site. This information is published for most of the university educational programs. The lists of students were downloaded, combined and then automatically matched with students' profiles on the social network site VK. VK provides API (application public interface) that allows to perform search requests and download information about its users if it is not hidden by privacy settings in JSON format. Students and profiles were matched by the first and the last names. A special dictionary was used to account for different forms of the same name in Russian, e.g. Ваня (Vanya) and Иван (Ivan). The search was performed among users who stated that they study in the university in their profiles and additionally among their friends. 91% of all students were found.
+Lists of students along with their GPA are publicly available on the university web site. This information is published for most of the university educational programs. The lists of students were downloaded, combined and then automatically matched with students' profiles on the social network site VK. VK provides API (application public interface) that allows to perform search requests and download information about its users if it is not hidden by privacy settings in JSON format. Students and profiles were matched by the first and the last names. A special dictionary was used to account for different forms of the same name in Russian, e.g. Ваня (Vanya) and Иван (Ivan). The search was performed among users who stated that they study in the university in their profiles and additionally among their friends. 91% of all students were found. Data was downloaded in August, 2016.
 
 List of files
 -------------
@@ -28,7 +28,7 @@ inside_friends - number of VK friends who are present in this data set
 Full names of campuses, faculties and programmes corresponding to the codes from master.csv.
 
 ### friends.json
-Data about VK friendship in JSON format.
+Data about VK friendship in JSON format. 
 
 ### graph.png
 Visualization of friendship network. 4 main clusters correspond to 4 campuses, smaller clusters correspond to different educational programmes, different colors correspond to different years of studies.
