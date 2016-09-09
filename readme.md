@@ -8,12 +8,17 @@ Data collection
 
 Lists of students along with their GPA are publicly available on the university web site. This information is published for most of the university educational programs. The lists of students were downloaded, combined and then automatically matched with students' profiles on the social network site VK. VK provides API (application public interface) that allows to perform search requests and download information about its users if it is not hidden by privacy settings in JSON format. Students and profiles were matched by the first and the last names. A special dictionary was used to account for different forms of the same name in Russian, e.g. Ваня (Vanya) and Иван (Ivan). The search was performed among users who stated that they study in the university in their profiles and additionally among their friends. 91% of all students were found. Data was downloaded in August, 2016.
 
+Anonymization
+-------------
+
+All VK identifiers and student names were removed from the data set. It is however possible to reconstruct them based on information about groups subscription or history of likes. Obfuscation of these data would not make sense as it is easier to collect the same data from scratch (all information is publicly available) than to deanonymize it in this way. 
+
 List of files
 -------------
 
 ### master.csv
 List of all students, contains following information  
-id - student identifier used in other files. All VK identifiers and student names were removed from data set  
+id - student identifier used in other files.
 gender - gender of a student as stated on VK site, 1 is female, 2 is male, 0 for students whose profiles were not found  
 stage - ba for bachelor, ma for master students  
 year - year of studies, 1 for freshmen, 2 for sophomores, 3 for juniors, 4 for seniors. Note that values 1 and 2 for master students corresponds to the 5th and 6th years of university studies respectively  
@@ -29,6 +34,12 @@ Full names of campuses, faculties and programmes corresponding to the codes from
 
 ### friends.json
 Data about VK friendship in JSON format. 
+
+### groups.json
+File contains VK ids of the groups to which students are subscribed
+
+### groups_info.json
+Basic information about groups. group_id corresponds to id from groups.json. members_count is total number of subscribers, hse_count is number of subscribers who are present in this dataset. If is_closed is equal to 1 it means that membership requires confirmation from group's administrators. If is_closed is equal to 2 it means that list of group's members is hidden, members_count in this case is equalt to 0. There are two types of groups on VK roughly corresponding to Facebook groups and Facebook pages. We made no distinction between them in this data set.
 
 ### graph.png
 Visualization of friendship network. 4 main clusters correspond to 4 campuses, smaller clusters correspond to different educational programmes, different colors correspond to different years of studies.
