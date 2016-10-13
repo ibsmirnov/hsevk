@@ -1,17 +1,17 @@
 HSE VK Dataset
 ==============
 
-This data set contains information about 20,684 students of National Research University Higher School of Economics along with information about XXX,XXX,XXX of their interactions on a popular social network VK since XX of XX, 20XX.
+This data set contains information about 20,684 students of National Research University Higher School of Economics along with information about 1,610,425 of their interactions on a popular social network VK since the 27th of October, 2007 and until the 1st of September, 2016.
 
 Data collection
 ---------------
 
-Lists of students along with their GPA are publicly available on the university web site. This information is published for most of the university educational programs. The lists of students were downloaded, combined and then automatically matched with students' profiles on the social network site VK. VK provides API (application public interface) that allows to perform search requests and download information about its users if it is not hidden by privacy settings in JSON format. Students and profiles were matched by the first and the last names. A special dictionary was used to account for different forms of the same name in Russian, e.g. Ваня (Vanya) and Иван (Ivan). The search was performed among users who stated that they study in the university in their profiles and additionally among their friends. 91% of all students were found. Data was downloaded in August, 2016.
+Lists of students along with their GPA are publicly available on the university web site. This information is published for most of the university educational programs. The lists of students were downloaded, combined and then automatically matched with students' profiles on the social networking site VK. VK provides API (application public interface) that allows to perform search requests and download information about its users in JSON format if it is not hidden by privacy settings. Students and profiles were matched by the first and the last names. A special dictionary was used to account for different forms of the same name in Russian, e.g. Ваня (Vanya) and Иван (Ivan). The search was performed among users who stated that they study in the university in their profiles and additionally among their friends. 91% of all students were found. Data was downloaded in August, 2016.
 
 Anonymization
 -------------
 
-All VK identifiers and student names were removed from the data set. It is however possible to reconstruct them based on information about groups subscription or history of likes. Obfuscation of these data would not make sense as it is easier to collect the same data from scratch (all information is publicly available) than to deanonymize it in this way. 
+All VK identifiers and student names were removed from the data set. It is possible to reconstruct them based on information about group subscriptions or history of likes included in the data set. However the further obfuscation of the data would not make sense as it is easier to collect the same data from scratch (all information is publicly available) than to deanonymize it in this way. 
 
 List of files
 -------------
