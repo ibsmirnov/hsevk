@@ -1,7 +1,7 @@
 HSE VK Dataset
 ==============
 
-This data set contains information about 20,684 students of National Research University Higher School of Economics along with information about 1,610,425 of their interactions on a popular social network VK since the 27th of October, 2007 and until the 1st of September, 2016.
+This data set contains information about 20,684 students of National Research University Higher School of Economics along with information about 1,460,470 of their interactions on a popular social network VK since the 27th of October, 2007 and until the 1st of September, 2016.
 
 Data collection
 ---------------
@@ -43,3 +43,12 @@ Basic information about groups. group_id corresponds to id from groups.json. mem
 
 ### graph.png
 Visualization of friendship network. 4 main clusters correspond to 4 campuses, smaller clusters correspond to different educational programmes, different colors correspond to different years of studies.
+
+### info.json
+Additional information from VK about gender, privacy settings and time of last visit.
+
+### likes.json
+Data about about 1,460,470 `likes`. Each entry contains id of a student who posted a content, id of a student who liked the content and corresponding timestamp.
+
+### history.pdf
+Vizualization of changes in number of interaction between students from the same cohort with time.
